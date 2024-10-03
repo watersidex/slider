@@ -1,0 +1,73 @@
+body {
+    font-family: "Jacquarda Bastarda 9", serif;
+    background: rgb(86,101,115);
+    background: radial-gradient(circle, rgba(86,101,115,1) 0%, rgba(23,32,42,1) 110%);
+}
+
+h1 {
+    margin: 15px;
+    color: white;
+}
+
+.slidecard {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around; 
+    background-color: #17202a;
+    border: 1px #17202a solid;
+    border-radius: 35px;
+    width: 400px;  
+}
+
+.slide {
+    position: relative;
+    width: 330px;
+    /*height: 350px;*/
+    aspect-ratio: 1180/1780;
+}
+
+.img {
+    position: absolute;
+    width: 330px;
+    /*height: 350px;*/
+    opacity: 0;
+    aspect-ratio: 1280/1780;
+    transition: all 0.4s ease;
+    border-radius: 25px;
+}
+
+.active {
+    opacity: 1;
+    z-index: 1;
+    transition: all 1s ease 0.5s;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    background-color: black;
+    color: black;
+    border: 0.5px white solid;
+    padding: 10px;
+    font-family: "Jacquarda Bastarda 9", serif;
+    color: white;
+    border-radius: 25px;
+    transition: all 1s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 0.5px black solid;
+}
